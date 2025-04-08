@@ -3,10 +3,10 @@ from .models import *
 
 class EventsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Event
+        model = Evento
         fields = '__all__'
 
 class NewsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = News
+        model = Noticia
         fields = '__all__'

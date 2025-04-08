@@ -1,10 +1,10 @@
 from django.contrib import admin
 from .models import *
 
-@admin.register(Event)
+@admin.register(Evento)
 class EventAdmin(admin.ModelAdmin):
-    list_display = ['title', 'image', 'created_by', 'paragraph', 'date']
+    list_display = ['titulo', 'imagen', 'creadoPor', 'parrafo', 'fecha', 'lugar']
 
-@admin.register(News)
+@admin.register(Noticia)
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ['title', 'image', 'created_by', 'paragraph', 'url']
+    list_display = ['titulo', 'imagen', 'creadoPor', 'parrafo', 'url']

@@ -26,15 +26,13 @@ SECRET_KEY = 'django-insecure-*i22+&xzz$yt9+5y-!6n5^qbz1^-3_-gyw^yqr$ocp@d+z-p!*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['adminrosarioscore.pythonanywhere.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'corsheaders',
-    'admin_interface',
-    'colorfield',
     'notifications.apps.NotificationsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -117,6 +115,7 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
